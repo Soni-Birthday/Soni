@@ -562,7 +562,8 @@ function splitWord(el){
 }
 const line1Chars = splitWord($('wLine1'));
 const line2Chars = splitWord($('wLine2'));
-const kChars = [...line1Chars, ...line2Chars];
+const line3Chars = splitWord($('wLine3'));
+const kChars = [...line1Chars, ...line2Chars, ...line3Chars];
 
 /* drifting light motes behind the scene */
 function buildMotes(){
